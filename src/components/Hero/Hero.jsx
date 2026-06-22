@@ -55,7 +55,7 @@ export default function Hero({ onBookNow }) {
             </p>
             <div className={styles.heroCtas}>
               <button className={styles.heroCtaPrimary} onClick={onBookNow}>
-                Book an appointment
+                Sign Up
               </button>
               <a className={styles.heroCtaGhost} href="#services" onClick={handleExplore}>
                 Explore the menu

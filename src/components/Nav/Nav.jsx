@@ -13,7 +13,7 @@ export default function Nav({ onBookNow }) {
         </ul>
 
         <div className={styles.navRight}>
-          <button className="btn btn-dark" onClick={onBookNow}>Book now</button>
+          <button className="btn btn-dark" onClick={onBookNow}>Sign Up</button>
         </div>
       </div>
     </nav>

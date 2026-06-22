@@ -38,8 +38,8 @@ function App() {
     setTimeout(() => setToast(null), 3200);
   }, []);
 
-  // ── Standalone booking modal ──────────────────────────────────────────────
-  const openBookingModal = useCallback(() => setIsBookingModalOpen(true), []);
+  // ── Sign Up (Nav / Hero / Footer buttons) ────────────────────────────────
+  const openBookingModal = useCallback(() => setIsSigModalOpen(true), []);
   const closeBookingModal = useCallback(() => setIsBookingModalOpen(false), []);
   const handleBookingSubmit = useCallback(() => {
     setIsBookingModalOpen(false);
