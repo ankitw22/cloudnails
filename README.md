@@ -57,3 +57,4 @@ public/
 - "Add to Appointment" → closes drawer → `SignatureModal` opens.
 - Confirm or Skip → closes modal → toast "Appointment request received! We'll be in touch shortly."
 - Today's hours row is highlighted in rose using `(new Date().getDay() + 6) % 7`.
+ 
