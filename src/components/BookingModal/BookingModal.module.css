@@ -1,0 +1,145 @@
+.bmOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 600;
+  background: rgba(22, 19, 15, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease;
+}
+
+.bmOverlayOpen {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.bmCard {
+  background: var(--white);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2.75rem 2.5rem 2rem;
+  position: relative;
+  transform: translateY(14px) scale(0.98);
+  transition: transform 0.25s ease;
+  box-shadow: 0 24px 80px rgba(22, 19, 15, 0.18), 0 4px 16px rgba(22, 19, 15, 0.08);
+}
+
+.bmOverlayOpen .bmCard {
+  transform: translateY(0) scale(1);
+}
+
+.bmClose {
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--s1);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  color: var(--ink2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.bmClose:hover {
+  background: var(--s2);
+}
+
+.bmEyebrow {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin-bottom: 0.6rem;
+}
+
+.bmHdr {
+  margin-bottom: 1.75rem;
+}
+
+.bmTitle {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 0.55rem;
+}
+
+.bmSub {
+  font-size: 0.8rem;
+  color: var(--ink2);
+  line-height: 1.65;
+}
+
+.bmForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.bmField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.bmLbl {
+  font-size: 0.72rem;
+  color: var(--ink2);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.bmOpt {
+  font-weight: 400;
+  color: var(--ink3);
+}
+
+.bmInp {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 0.86rem;
+  color: var(--ink);
+  outline: none;
+  font-family: 'Manrope', sans-serif;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+  width: 100%;
+  appearance: auto;
+}
+
+.bmInp::placeholder {
+  color: var(--ink3);
+}
+
+.bmInp:focus {
+  border-color: var(--rose);
+  box-shadow: 0 0 0 3px var(--rose-lt);
+  background: var(--white);
+}
+
+.bmFoot {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.bmFoot p {
+  font-size: 0.63rem;
+  color: var(--ink3);
+  line-height: 1.6;
+  text-align: center;
+}

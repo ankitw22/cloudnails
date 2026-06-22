@@ -1,0 +1,76 @@
+.photoWall {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  grid-template-rows: 310px 310px;
+  gap: 3px;
+  background: var(--border);
+}
+
+.pwItem {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.pwItem:first-child {
+  grid-row: span 2;
+}
+
+.pwItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.pwItem:hover img {
+  transform: scale(1.06);
+}
+
+.pwOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(22, 19, 15, 0.5) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.pwItem:hover .pwOverlay {
+  opacity: 1;
+}
+
+.pwLabel {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: 0.3s;
+}
+
+.pwItem:hover .pwLabel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .photoWall {
+    grid-template-rows: 240px 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .photoWall {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+  }
+  .pwItem:first-child {
+    grid-row: span 2;
+  }
+}

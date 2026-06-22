@@ -1,0 +1,195 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 19, 15, 0.35);
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.22s, visibility 0.22s;
+  backdrop-filter: blur(3px);
+}
+
+.backdropOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 501;
+  background: var(--white);
+  border-radius: 20px 20px 0 0;
+  border-top: 1px solid var(--border);
+  transform: translateY(100%);
+  transition: transform 0.32s cubic-bezier(0.32, 0, 0.2, 1);
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerOpen {
+  transform: translateY(0);
+}
+
+.dPill {
+  width: 36px;
+  height: 3px;
+  background: var(--s2);
+  border-radius: 2px;
+  margin: 12px auto 0;
+  flex-shrink: 0;
+}
+
+.dHdr {
+  padding: 1.25rem 2rem 0.9rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.dBack {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  cursor: pointer;
+  margin-bottom: 0.35rem;
+  transition: color 0.15s;
+}
+
+.dBack:hover {
+  color: var(--rose);
+}
+
+.dTitle {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.7rem;
+  color: var(--ink);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.dMeta {
+  font-size: 0.7rem;
+  color: var(--ink3);
+  margin-top: 0.2rem;
+  font-weight: 300;
+}
+
+.dClose {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: 0.15s;
+  color: var(--ink2);
+}
+
+.dClose:hover {
+  background: var(--s1);
+  border-color: var(--s2);
+}
+
+.dBody {
+  overflow-y: auto;
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.dOptsLbl {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 0.75rem;
+}
+
+.dOpt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 8px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.12s;
+}
+
+.dOpt:last-child {
+  border-bottom: none;
+}
+
+.dOpt:hover {
+  background: var(--s1);
+}
+
+.dOptName {
+  font-size: 0.86rem;
+  color: var(--ink);
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+
+.dOptSel .dOptName {
+  font-weight: 600;
+}
+
+.dOptSub {
+  font-size: 0.68rem;
+  color: var(--ink3);
+}
+
+.dRadio {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 1.5px solid var(--s2);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s;
+}
+
+.dOptSel .dRadio {
+  border-color: var(--rose);
+}
+
+.dOptSel .dRadio::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--rose);
+  display: block;
+}
+
+.dFoot {
+  padding: 0.9rem 2rem 1.75rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.dPrice {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  color: var(--ink);
+  min-width: 56px;
+}

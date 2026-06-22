@@ -1,0 +1,54 @@
+.footer {
+  padding: 2.5rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.footW {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footLogo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.1rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.footLinks {
+  display: flex;
+  gap: 1.75rem;
+  list-style: none;
+  align-items: center;
+}
+
+.footLinks a {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footLinks a:hover {
+  color: var(--rose);
+}
+
+.footCopy {
+  font-size: 0.6rem;
+  color: var(--ink3);
+  text-align: center;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,46 @@
+.infoBar {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.ibItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.7rem;
+  color: var(--ink2);
+  font-weight: 400;
+}
+
+.ibItem svg {
+  color: var(--rose);
+  flex-shrink: 0;
+}
+
+.ibItem a {
+  color: var(--rose);
+  text-decoration: none;
+}
+
+.ibSep {
+  width: 1px;
+  height: 16px;
+  background: var(--border);
+}
+
+@media (max-width: 768px) {
+  .infoBar {
+    gap: 1.25rem;
+    padding: 0.75rem 1rem;
+  }
+  .ibSep {
+    display: none;
+  }
+}
