@@ -1,0 +1,121 @@
+.legalNav {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.legalNavW {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.legalLogo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.1rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.backLink {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink2);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.backLink:hover {
+  color: var(--rose);
+}
+
+.legalMain {
+  padding: 3.5rem 2rem 4rem;
+}
+
+.legalWrap {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin-bottom: 0.6rem;
+}
+
+.title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--ink);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.effective {
+  font-size: 0.8rem;
+  color: var(--ink3);
+  margin-top: 0.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.body {
+  margin-top: 2rem;
+}
+
+.body h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.body h2:first-child {
+  margin-top: 0;
+}
+
+.body p {
+  font-size: 0.92rem;
+  color: var(--ink2);
+  line-height: 1.7;
+  margin-bottom: 0.9rem;
+}
+
+.body p strong {
+  color: var(--ink);
+}
+
+.body ul {
+  margin: 0.75rem 0 1.1rem 1.25rem;
+  padding: 0;
+}
+
+.body li {
+  font-size: 0.92rem;
+  color: var(--ink2);
+  line-height: 1.65;
+  margin-bottom: 0.5rem;
+}
+
+.body a {
+  color: var(--rose);
+}
+
+.footNote {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.72rem;
+  color: var(--ink3);
+  text-align: center;
+}

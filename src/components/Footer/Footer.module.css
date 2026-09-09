@@ -51,4 +51,15 @@
   max-width: 1360px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.8;
+}
+
+.footCopy a {
+  color: var(--ink3);
+  text-decoration: underline;
+  transition: color 0.15s;
+}
+
+.footCopy a:hover {
+  color: var(--rose);
 }
