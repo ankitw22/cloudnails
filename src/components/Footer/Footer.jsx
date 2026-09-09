@@ -1,15 +1,18 @@
+import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 export default function Footer({ onBookNow }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.footW}>
-        <a href="#" className={styles.footLogo}>Cloud Nails &amp; Psychic</a>
+        <a href="/" className={styles.footLogo}>Cloud Nails &amp; Psychic</a>
 
         <ul className={styles.footLinks}>
-          <li><a href="#services">Menu</a></li>
-          <li><a href="#hours">Hours</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/#services">Menu</a></li>
+          <li><a href="/#hours">Hours</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+          <li><Link to="/terms-of-service">Terms of Service</Link></li>
           <li>
             <button className="btn btn-ghost" onClick={onBookNow}>
               Book Now
@@ -20,6 +23,9 @@ export default function Footer({ onBookNow }) {
 
       <p className={styles.footCopy}>
         &copy; {new Date().getFullYear()} Cloud Nails &amp; Psychic. All rights reserved. &nbsp;·&nbsp; Inglewood, California
+        <br />
+        Please review our <Link to="/privacy-policy">Privacy Policy</Link> and{' '}
+        <Link to="/terms-of-service">Terms of Service</Link>.
       </p>
     </footer>
   );

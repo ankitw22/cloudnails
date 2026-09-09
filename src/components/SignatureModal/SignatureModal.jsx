@@ -101,7 +101,10 @@ export default function SignatureModal({ isOpen, onSubmit, onSkip }) {
             <p className={styles.sigLegal}>
               By signing up, you agree to receive business-related SMS messages sent via Cloud Nails &amp; Psychic.
               Message frequency varies. Message &amp; data rates may apply. Reply STOP to opt out at any time.
-              Reply HELP for support. <span style={{ color: 'var(--ink2)' }}>Privacy Policy · Terms of Service</span>
+              Reply HELP for support.{' '}
+              <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ink2)' }}>Privacy Policy</a>
+              {' · '}
+              <a href="/terms-of-service" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ink2)' }}>Terms of Service</a>
             </p>
           </form>
         </div>
