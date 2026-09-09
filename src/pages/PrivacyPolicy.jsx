@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
       </p>
 
       <p className={styles.footNote}>
-        Website publication copy &middot; Cloud Nails and Psychic &middot; Effective September 4, 2026
+        Website publication copy &middot; Cloud Nails and Psychic
       </p>
     </LegalPage>
   );
